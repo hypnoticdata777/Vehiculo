@@ -11,6 +11,12 @@ public class MotoAutomatica extends Moto {
     public String getTipoTransmision() { return tipoTransmision; }
 
     @Override
+    public String describir() {
+        return "MotoAutomatica [id=" + id + ", marca=" + marca
+                + ", cilindrada=" + cilindrada + "cc, transmision=" + tipoTransmision + "]";
+    }
+
+    @Override
     public void mostrarInfo() {
         System.out.println("=== MOTO AUTOMATICA ===");
         System.out.println("ID: " + id);

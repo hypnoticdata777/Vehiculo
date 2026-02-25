@@ -11,6 +11,11 @@ public class Avion extends Vehiculo {
     public int getMotores() { return motores; }
 
     @Override
+    public String describir() {
+        return "Avion [id=" + id + ", marca=" + marca + ", motores=" + motores + "]";
+    }
+
+    @Override
     public void mostrarInfo() {
         System.out.println("=== AVION ===");
         System.out.println("ID: " + id);

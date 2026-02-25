@@ -11,6 +11,12 @@ public class MotoEstandar extends Moto {
     public int getVelocidades() { return velocidades; }
 
     @Override
+    public String describir() {
+        return "MotoEstandar [id=" + id + ", marca=" + marca
+                + ", cilindrada=" + cilindrada + "cc, velocidades=" + velocidades + "]";
+    }
+
+    @Override
     public void mostrarInfo() {
         System.out.println("=== MOTO ESTANDAR ===");
         System.out.println("ID: " + id);

@@ -1,6 +1,11 @@
 package com.vehiculo;
 
-public class Vehiculo {
+/**
+ * Abstract base class for all vehicles.
+ * Subclasses must implement {@link Describible#mostrarInfo()} and
+ * {@link Describible#describir()} to provide type-specific output.
+ */
+public abstract class Vehiculo implements Describible {
     protected String id;
     protected String marca;
 
@@ -9,12 +14,11 @@ public class Vehiculo {
         this.marca = marca;
     }
 
-    public void mostrarInfo() {
-        System.out.println("=== VEHICULO ===");
-        System.out.println("ID: " + id);
-        System.out.println("Marca: " + marca);
-    }
-
     public String getId() { return id; }
     public String getMarca() { return marca; }
+
+    @Override
+    public String describir() {
+        return "Vehiculo [id=" + id + ", marca=" + marca + "]";
+    }
 }

@@ -11,6 +11,11 @@ public class Coche extends Vehiculo {
     public int getPuertas() { return puertas; }
 
     @Override
+    public String describir() {
+        return "Coche [id=" + id + ", marca=" + marca + ", puertas=" + puertas + "]";
+    }
+
+    @Override
     public void mostrarInfo() {
         System.out.println("=== COCHE ===");
         System.out.println("ID: " + id);

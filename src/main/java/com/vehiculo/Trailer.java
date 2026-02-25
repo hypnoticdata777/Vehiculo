@@ -11,6 +11,11 @@ public class Trailer extends Vehiculo {
     public double getCapacidadToneladas() { return capacidadToneladas; }
 
     @Override
+    public String describir() {
+        return "Trailer [id=" + id + ", marca=" + marca + ", capacidad=" + capacidadToneladas + "t]";
+    }
+
+    @Override
     public void mostrarInfo() {
         System.out.println("=== TRAILER ===");
         System.out.println("ID: " + id);
